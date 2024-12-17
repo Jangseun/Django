@@ -29,8 +29,8 @@ urlpatterns += [
 
 from django.views.generic import RedirectView
 
-urlpatterns == [
-    path('', RedirectView.as_view(url='catalog/', permanent=True))
+urlpatterns += [
+    path('', RedirectView.as_view(url='/catalog/', permanent=True)),
 ]
 
 from django.conf import settings
